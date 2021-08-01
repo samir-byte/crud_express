@@ -1,0 +1,40 @@
+<div class="container">
+<div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Update Employee</h5>
+            </div>
+            <div class="modal-body">
+                <form action="/employee/update/{{employee._id}}" method="post" autocomplete="off">
+                <input type="hidden" name="_id" value="{{employee._id}}">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Full name</label>
+                        <input type="text" class="form-control" id="exampleInputText" name="fullname"
+                            placeholder="" value="{{employee.fullName}}">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="" value="{{employee.email}}">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Mobile</label>
+                        <input type="text" class="form-control" id="exampleInputText" name="mobile"
+                            placeholder="" value="{{employee.mobile}}">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">City</label>
+                        <input type="text" class="form-control" id="exampleInputText" name="city"
+                            placeholder="" value="{{employee.city}}">
+                    </div>
+            </div>
+            
+            <div class="modal-footer">
+                <a href="/employee" class="btn btn-secondary">Back</a>
+                <input type="submit" class="btn btn-primary" value="Save Changes" />
+              </div>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
