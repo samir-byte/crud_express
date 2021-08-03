@@ -8,22 +8,22 @@
                 <form action="/employee/update/{{employee._id}}" method="post" autocomplete="off">
                 <input type="hidden" name="_id" value="{{employee._id}}">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Full name</label>
+                        <label for="exampleInputText">Full name</label>
                         <input type="text" class="form-control" id="exampleInputText" name="fullname"
                             placeholder="" value="{{employee.fullName}}">
                     </div>
                     <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1"
-                            placeholder="" value="{{employee.email}}">
+                        <label for="exampleFormControlInput1" class="form-label">User name</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1"
+                            placeholder="" value="{{employee.username}}">
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Mobile</label>
+                        <label for="exampleInputText">Mobile</label>
                         <input type="text" class="form-control" id="exampleInputText" name="mobile"
                             placeholder="" value="{{employee.mobile}}">
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputEmail1">City</label>
+                        <label for="exampleInputText">City</label>
                         <input type="text" class="form-control" id="exampleInputText" name="city"
                             placeholder="" value="{{employee.city}}">
                     </div>

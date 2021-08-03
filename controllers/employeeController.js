@@ -22,7 +22,7 @@ router.post('/', (req, res) => {
 function insertRecord(req, res) {
     var employee = new Employee();
     employee.fullName = req.body.fullname;
-    employee.email = req.body.email;
+    employee.username = req.body.username;
     employee.mobile = req.body.mobile;
     employee.city = req.body.city;
     employee.save((err) => {
@@ -42,7 +42,7 @@ router.get('/:id', (req, res) => {
             }).lean()});
 router.post('/update/:id', (req, res) => {
     // console.log(req.params.id);
-    Employee.findOneAndUpdate({_id: req.body._id}, {fullName :req.body.fullname,email:req.body.email,
+    Employee.findOneAndUpdate({_id: req.body._id}, {fullName :req.body.fullname,username:req.body.username,
         mobile:req.body.mobile,city:req.body.city}, {new: true, useFindAndModify: false },(err, employee)=>{
         if (err) {
             res.send(err);

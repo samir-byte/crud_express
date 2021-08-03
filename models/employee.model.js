@@ -5,7 +5,7 @@ const employeeSchema = new mongoose.Schema({
       type: String,
       required: "This field is required"
     },  
-    email: {
+    username: {
       type: String
     },
     mobile: {
